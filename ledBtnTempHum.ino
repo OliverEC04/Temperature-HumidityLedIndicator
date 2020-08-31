@@ -37,12 +37,10 @@ void loop()
 
   int tempBright = (temp_hum_val[1] - 10) / 20 * 255; // 10 - 30 C
   int humBright = (temp_hum_val[0] - 30) / 70 * 255; // 30 - 100 %
-  /*
   Serial.print("Temperature brightness (0-255): ");
   Serial.println(tempBright);
   Serial.print("Humidity brightness (0-255): ");
   Serial.println(humBright);
-  */
   
   Serial.print("Humidity: ");
   Serial.print(temp_hum_val[0]);
